@@ -30,7 +30,7 @@ export const UserList = () => {
     if (!userName || !userEmail) {
       alert("Please Enter task name and description Both");
     } else {
-      const resp = await axios.put(`/editUser/${user._id}`, {
+      const resp = await axios.put(`${BASE_URL}/editUser/${user._id}`, {
         name: userName,
         email: userEmail,
         date: datee,
@@ -41,7 +41,7 @@ export const UserList = () => {
 
   // DELETE
   const handleDelete = async (userId) => {
-    const resp = await axios.delete(`/deleteUser/${userId}`);
+    const resp = await axios.delete(`${BASE_URL}/deleteUser/${userId}`);
     console.log(resp);
   };
   
