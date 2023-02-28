@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-const BASE_URL= "https://todo-list-app-production-0e0f.up.railway.app/"
+const BASE_URL= "https://todo-list-app-production-0e0f.up.railway.app"
 export const UserList = () => {
   const [userData, setUserData] = useState(null);
 
