@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const BASE_URL= "https://todo-list-app-production-0e0f.up.railway.app/"
 export const UserList = () => {
   const [userData, setUserData] = useState(null);
 
   const fetchUserData = async () => {
-    const resp = await axios.get("/getUsers");
+    const resp = await axios.get(`${BASE_URL}/getUsers`);
     console.log(resp);
   
     // if No users are there please dont set the values
