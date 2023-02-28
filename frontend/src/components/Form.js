@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-const BASE_URL="https://todo-list-app-production-0e0f.up.railway.app/"
+const BASE_URL="https://todo-list-app-production-0e0f.up.railway.app"
 export const Form = () => {
   // To Store the value from Frontend
   const [userName, setUserName] = useState("");
