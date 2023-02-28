@@ -7,6 +7,10 @@ const app = express();
 // Add CORS middleware
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    'Access-Control-Allow-Methods',
+    'OPTIONS, GET, POST, PUT, PATCH, DELETE'
+  );
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
